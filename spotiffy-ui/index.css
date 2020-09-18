@@ -1,0 +1,145 @@
+:root {
+  --text-green-color: #1ed760;
+  --background-color: #2d46b9;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gotham;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+header.top-menu {
+  background-color: #000;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  min-width: 30%;
+}
+header.top-menu ul {
+  display: flex;
+  min-width: 100%;
+}
+header.top-menu ul li a {
+  color: white;
+  padding: 1.2rem;
+  font-weight: bold;
+}
+
+header.top-menu ul li a:hover {
+  color: var(--text-green-color);
+}
+
+#main {
+  background-image: url(bursts.svg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 175%;
+  background-position: 42% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  color: var(--text-green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.intro p {
+  font-size: 1.2rem;
+}
+.intro button {
+  margin-top: 3rem;
+  background-color: var(--text-green-color);
+  color: #2d46b9;
+  padding: 16px 40px 16px;
+  border-radius: 2rem;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.intro button:hover {
+  background-color: white;
+}
+
+#none {
+  cursor: default;
+}
+
+#footer {
+  background-color: #000;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  min-height: 35vh;
+}
+#footer h3 {
+  color: grey;
+  margin-bottom: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box ul li a {
+  margin-top: 2rem;
+}
+
+.box img {
+  height: 1.4rem;
+  margin-right: 1.2rem;
+}
+
+.imagens {
+  display: flex;
+  flex-direction: row !important;
+}
